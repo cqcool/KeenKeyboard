@@ -442,8 +442,8 @@ private extension KeenKeyboard {
                     let dotItem = buildItem(index: index)
                     dotItem.tag = tagOfWechatDot
                     dotItem.title(".")
-                    zeroItem.frame(CGRect(x: CGRectGetMaxX(zeroItem.frame)+space, y: itemY, width: itemW, height: itemH))
-                    wechatCorner(item: zeroItem)
+                    dotItem.frame(CGRect(x: CGRectGetMaxX(zeroItem.frame)+space, y: itemY, width: itemW, height: itemH))
+                    wechatCorner(item: dotItem)
                     
                 }
             } else {
