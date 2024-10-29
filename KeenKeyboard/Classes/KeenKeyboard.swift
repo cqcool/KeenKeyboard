@@ -457,6 +457,7 @@ private extension KeenKeyboard {
                         index += 1
                     } else {
                         lastItemH = itemH*3 + space
+                        item.tag = tagOfOther
                         item.title(attributes.titleOfOther)
                         item.titleColor(attributes.colorOfOther)
                         item.backColor(attributes.backColorOfOther)
