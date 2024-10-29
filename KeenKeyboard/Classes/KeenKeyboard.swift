@@ -271,7 +271,7 @@ private extension KeenKeyboard {
         let vSpaces = CGFloat(row + 1) * space + CGFloat(row) * attributes.separatorScale
         let itemW = (frame.width - hSpaces) / CGFloat(column)
         let itemH = (frame.height - vSpaces - safeAreaHeight) / CGFloat(row)
-        for idx in 0..<3 {
+        for idx in 0..<4 {
             for ikx in 0..<3 {
                 let itemX = space + CGFloat(ikx) * (itemW+space) + 0.5 * CGFloat((ikx+1))
                 let itemY = space + CGFloat(idx) * (itemH+space) + 0.5 * CGFloat((idx+1))
