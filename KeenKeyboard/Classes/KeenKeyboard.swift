@@ -512,6 +512,13 @@ private extension KeenKeyboard {
                 }
             }
         }else if sender.tag == tagOfOther {
+            if attributes.keyboardStyle == .wechat {
+                textField.resignFirstResponder()
+                if let d = delegate {
+                    d.other(self, text: content)
+                }
+                return
+            }
             if attributes.style == .number {
                 textField.resignFirstResponder()
                 if let d = delegate {
